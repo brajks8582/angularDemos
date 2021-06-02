@@ -14,6 +14,8 @@ import { Customer2Component } from './customer2/customer2.component';
 import { AllproductsComponent } from './allproducts/allproducts.component';
 import { SpecificproductComponent } from './specificproduct/specificproduct.component';
 import { TemplateformComponent } from './templateform/templateform.component';
+import { FrmBuildercompComponent } from './frm-buildercomp/frm-buildercomp.component';
+import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { TemplateformComponent } from './templateform/templateform.component';
     AllproductsComponent,
     SpecificproductComponent,
     TemplateformComponent,
+    FrmBuildercompComponent,
+    ReactiveformsComponent,
   ],
   imports: [
     BrowserModule,
