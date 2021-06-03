@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { MusicserviceService } from '../musicservice.service';
+import { ServicecallwebapiService} from '../servicecallwebapi.service'
 import { Observable  } from "rxjs/";
 
 @Component({
-  selector: 'displaymusic',
+  selector: 'cognizant',
   template: `
+  <h1>Braj demo</h1>
    <ul *ngFor="let x of myinstruments">
     <li>{{x.instid}}:{{x.instrumentname}} costs {{x.price}}</li>
     </ul>
@@ -16,10 +17,11 @@ export class DisplaymusicComponent implements OnInit {
 
   public myinstruments:any =[];
 
-  constructor(private serviceobj : MusicserviceService) { }
+  constructor(private serviceobj : ServicecallwebapiService) { }
 
   ngOnInit(): void {
-    this.myinstruments=this.serviceobj.getMusicalinstruments() 
+    this.myinstruments=this.serviceobj.getmyData().subscribe(data=>this.myinstruments);
+
   }
 
 }

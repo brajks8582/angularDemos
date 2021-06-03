@@ -11,7 +11,7 @@ export class ServicecallwebapiService {
   private url :string = "https://localhost:44388/api/shopping";
   constructor(private http:HttpClient) { }
 
-  getData(): Observable<IMusicInstrument[]> {
+  getmyData(): Observable<IMusicInstrument[]> {
     return this.http.get<IMusicInstrument[]>(this.url);
   }
 }
