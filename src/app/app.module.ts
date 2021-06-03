@@ -16,7 +16,11 @@ import { SpecificproductComponent } from './specificproduct/specificproduct.comp
 import { TemplateformComponent } from './templateform/templateform.component';
 import { FrmBuildercompComponent } from './frm-buildercomp/frm-buildercomp.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
-
+import {CompmusicComponent} from './compmusic/compmusic.component';
+import {ServicecallwebapiService} from './servicecallwebapi.service';
+import {MusicserviceService} from './musicservice.service';
+import {HttpClientModule} from '@angular/common/http'
+imports :[BrowserModule, HttpClientModule]
 
 @NgModule({
   declarations: [
@@ -35,6 +39,7 @@ import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component'
     TemplateformComponent,
     FrmBuildercompComponent,
     ReactiveformsComponent,
+    CompmusicComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +47,7 @@ import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component'
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ServicecallwebapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

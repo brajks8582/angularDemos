@@ -5,6 +5,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'frmbuildercomp',
   template: `
+  
+
   <form [formGroup] = "frm">
 <div formGroupName="name">
   <input formControlName="first" placeholder="First">
