@@ -17,9 +17,10 @@ import { TemplateformComponent } from './templateform/templateform.component';
 import { FrmBuildercompComponent } from './frm-buildercomp/frm-buildercomp.component';
 import { ReactiveformsComponent } from './reactiveforms/reactiveforms.component';
 import {CompmusicComponent} from './compmusic/compmusic.component';
-import {ServicecallwebapiService} from './servicecallwebapi.service';
+import {ServicecallwebapiService} from './servicecallwebapi.service'
 import {MusicserviceService} from './musicservice.service';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { DisplaymusicComponent } from './displaymusic/displaymusic.component';
 imports :[BrowserModule, HttpClientModule]
 
 @NgModule({
@@ -40,6 +41,8 @@ imports :[BrowserModule, HttpClientModule]
     FrmBuildercompComponent,
     ReactiveformsComponent,
     CompmusicComponent,
+    DisplaymusicComponent,
+    
   ],
   imports: [
     BrowserModule,
